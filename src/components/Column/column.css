@@ -1,0 +1,36 @@
+.column {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 4px 1px;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.column:focus {
+  outline: transparent;
+}
+
+.column-image {
+  width: 32px;
+  height: 32px;
+  fill: #ccc;
+  -webkit-animation: column-image 1s step-end infinite;
+  animation: column-image 1s step-end infinite;
+}
+
+.column-image:hover {
+  fill: #2196f3;
+}
+@-webkit-keyframes column-image {
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes column-image {
+  50% {
+    opacity: 0.5;
+  }
+}
